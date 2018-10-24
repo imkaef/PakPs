@@ -84,11 +84,13 @@ namespace ПАК_ПС
                     }
                     else
                     {
-                        picture.TmpGr.Clear();
+                        if (picture.manipulator.selected != picture.TmpGr)
+                            picture.TmpGr.Clear();
                     }
                 }
                 else
                 {
+                    picture.manipulator.Attach(null);
                     checkBox1.CheckState = CheckState.Unchecked;
                     picture.TmpGr.Clear();
                 }
@@ -136,7 +138,7 @@ namespace ПАК_ПС
             toolStrip1.Items.Add(Btn);
             Btn.Click += button_click;
             PrototypeCreator Cr = new PrototypeCreator();
-            Cr.Prototype = picture.manipulator.selected;
+            Cr.Prototype = picture.manipulator.selected.Clone();
             dict[Btn.Text] = Cr;
             Nm++;
         }
