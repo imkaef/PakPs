@@ -77,9 +77,6 @@ namespace ПАК_ПС
             }
             base.Move(Xmin, Ymin);
             base.Resize(Xmax - Xmin, Ymax - Ymin);
-            //Pereschitat'
-            //base.Move();
-            //base.Resize();
         }
 
         public override bool Touch(float ax, float ay)

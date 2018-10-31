@@ -159,9 +159,29 @@ namespace ПАК_ПС
             }
         }
 
+        private void combineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrototypeCreator Cr = new PrototypeCreator();
+            Cr.Prototype = picture.manipulator.selected.Clone();
+            picture.Add(Cr.Prototype);
+            picture.TmpGr.Clear();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+ 
     }
 }

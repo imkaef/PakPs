@@ -42,6 +42,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addToBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.combineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -58,6 +59,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(779, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -128,6 +130,7 @@
             this.statusStrip1.Size = new System.Drawing.Size(779, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
             // 
             // panel
             // 
@@ -149,14 +152,15 @@
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToBarToolStripMenuItem});
+            this.addToBarToolStripMenuItem,
+            this.combineToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(151, 28);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 80);
             // 
             // addToBarToolStripMenuItem
             // 
             this.addToBarToolStripMenuItem.Name = "addToBarToolStripMenuItem";
-            this.addToBarToolStripMenuItem.Size = new System.Drawing.Size(175, 24);
+            this.addToBarToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
             this.addToBarToolStripMenuItem.Text = "Add to bar";
             this.addToBarToolStripMenuItem.Click += new System.EventHandler(this.addToBarToolStripMenuItem_Click);
             // 
@@ -171,6 +175,13 @@
             this.checkBox1.Text = "попадание";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // combineToolStripMenuItem
+            // 
+            this.combineToolStripMenuItem.Name = "combineToolStripMenuItem";
+            this.combineToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.combineToolStripMenuItem.Text = "Combine";
+            this.combineToolStripMenuItem.Click += new System.EventHandler(this.combineToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -214,6 +225,7 @@
         private System.Windows.Forms.ToolStripButton GroupTool;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addToBarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem combineToolStripMenuItem;
     }
 }
 

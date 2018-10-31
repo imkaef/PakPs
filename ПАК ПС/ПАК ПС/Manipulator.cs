@@ -12,7 +12,7 @@ namespace ПАК_ПС
         public Figure selected;
         int active_point = -1;
 
-        public override bool Touch(float ax, float ay)
+        public override bool Touch(float ax, float ay)//Определяем куда ткнули в какую точку объекта
         {
             if (selected == null)
             {
@@ -49,7 +49,7 @@ namespace ПАК_ПС
             return false;
         }
 
-        public void Drag(float dx, float dy)
+        public void Drag(float dx, float dy)//Определяем за какую точку тянем
         {
             switch (active_point)
             {
@@ -74,8 +74,7 @@ namespace ПАК_ПС
             }
         }
 
-
-        public void Attach(Figure f)
+        public void Attach(Figure f)//Выделяем квадратом выделенный объект
         {
             selected = f;
             if (selected != null)
