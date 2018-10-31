@@ -44,5 +44,12 @@ namespace ПАК_ПС
                 }
             return null;
         }
+        public void Remove(Figure f)
+        {
+            if (list.Contains(f))
+            {
+                list.Remove(f);
+            }
+        }
     }
 }

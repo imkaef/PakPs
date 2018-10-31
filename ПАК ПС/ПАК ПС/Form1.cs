@@ -164,7 +164,10 @@ namespace ПАК_ПС
             PrototypeCreator Cr = new PrototypeCreator();
             Cr.Prototype = picture.manipulator.selected.Clone();
             picture.Add(Cr.Prototype);
+            (picture.manipulator.selected as Group).RemoveFromPicture(picture);
             picture.TmpGr.Clear();
+            //picture.Remove(picture.manipulator.selected);
+            //picture.TmpGr.Clear();
         }
 
         private void Form1_Load(object sender, EventArgs e)

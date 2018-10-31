@@ -90,6 +90,15 @@ namespace ПАК_ПС
             }
             return false;
         }
+
+        public void RemoveFromPicture(Picture pic)
+        {
+            foreach (var f in figs)
+            {
+                pic.Remove(f);
+            }
+        }
+
         public void Clear()
         {
             figs.Clear();
