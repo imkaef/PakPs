@@ -44,7 +44,7 @@ namespace ПАК_ПС
                 }
             return null;
         }
-        public void Remove(Figure f)
+        public void Remove(Figure f)//Стирает объект F с формы
         {
             if (list.Contains(f))
             {

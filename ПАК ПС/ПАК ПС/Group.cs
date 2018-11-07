@@ -99,6 +99,16 @@ namespace ПАК_ПС
             }
         }
 
+        public void RemoveGroup(Figure f)
+        {
+            
+            if (figs.Contains(f))
+            {
+                Clear();
+            }
+            // перетащить из него элементы в картинку затем удалить группу
+        }
+
         public void Clear()
         {
             figs.Clear();

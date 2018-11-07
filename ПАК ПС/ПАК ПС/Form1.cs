@@ -185,6 +185,11 @@ namespace ПАК_ПС
 
         }
 
- 
+        private void unCombineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          //  foreach (var f in picture.manipulator.selected)
+                
+            //sel
+        }
     }
 }
