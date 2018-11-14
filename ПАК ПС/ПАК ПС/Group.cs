@@ -79,6 +79,14 @@ namespace ПАК_ПС
             base.Resize(Xmax - Xmin, Ymax - Ymin);
         }
 
+        public void Ungroup(Picture P)
+        {
+            foreach (var f in figs)
+            {
+                P.Add(f);
+            }
+        }
+
         public override bool Touch(float ax, float ay)
         {
             foreach (var f in figs)

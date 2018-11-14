@@ -187,9 +187,13 @@ namespace ПАК_ПС
 
         private void unCombineToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          //  foreach (var f in picture.manipulator.selected)
-                
-            //sel
+            if (picture.manipulator.selected is Group)
+            {
+                (picture.manipulator.selected as Group).Ungroup(picture);
+                picture.Remove(picture.manipulator.selected);
+                picture.manipulator.selected = null;
+            }
+  
         }
     }
 }
