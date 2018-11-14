@@ -194,6 +194,6 @@ namespace ПАК_ПС
                 picture.manipulator.selected = null;
             }
   
-        }
+        } 
     }
 }
