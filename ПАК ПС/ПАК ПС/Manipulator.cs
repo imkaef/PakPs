@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace ПАК_ПС
 {
-    class Manipulator : Figure
+    class Manipulator : Figure 
     {
         public Figure selected;
         int active_point = -1;

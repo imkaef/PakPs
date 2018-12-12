@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ПАК_ПС
 {
@@ -116,7 +112,8 @@ namespace ПАК_ПС
             }
             // перетащить из него элементы в картинку затем удалить группу
         }
-
+        //comand 
+        //excute 
         public void Clear()
         {
             figs.Clear();
