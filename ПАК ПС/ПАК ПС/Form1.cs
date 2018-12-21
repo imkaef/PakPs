@@ -66,7 +66,7 @@ namespace ПАК_ПС
                 picture.Add(figure);
                 figure.Draw(g);
             }
-            else
+            else  
             {
                 Figure selected = picture.Select(e.X, e.Y);
                 if (selected != null)
